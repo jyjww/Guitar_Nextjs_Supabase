@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: fit-content;
+}
+
+.wrapper h3 {
+    font-family: "NanumSquareExtrabold", sans-serif;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border : 1px solid #eaeeef;
+    background-color: #eaeeef;
+    border-radius: 30px;
+    min-width: 400px;
+    min-height: fit-content;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #333333;
+    width: 100%;
+}

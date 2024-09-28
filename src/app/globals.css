@@ -1,0 +1,369 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "NanumSquare", sans-serif;
+}
+
+/*navbar css*/
+.logo{
+  width: 100px;
+  max-height: 40px;
+  align-items: left;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #white;
+  padding: 10px 20px;
+}
+
+.links {
+  display : flex;
+  border : 1px solid #eaeeef;
+  border-radius: 30px;
+  padding : 8px 20px;
+  background-color: #eaeeef;
+  margin-left: auto; 
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  gap : 10px;
+}
+.links a {
+  margin: 0px 10px;
+  color: #333333;
+  text-decoration: none;
+  font-family: "NanumSquareLight", sans-serif;
+}
+
+.cart {
+  display : flex;
+  border : 1px solid #eaeeef;
+  border-radius: 30px;
+  padding : 8px 20px;
+  background-color: #eaeeef;
+  align-items: center;
+  width: fit-content;
+  justify-content: center;
+  margin: 0 10px;
+  font-family: "NanumSquareLight", sans-serif;
+}
+
+.cart > button {
+  font-family: "NanumSquareLight", sans-serif;
+  color: #333333;
+}
+
+.login {
+  display : flex;
+  border : 1px solid #333333;
+  border-radius: 30px;
+  padding : 8px 10px;
+  background-color: #333333;
+  width: 80px;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.login a {
+  margin: 0px 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "NanumSquareLight", sans-serif;
+  font-weight : 400; 
+  transition: color 0.3s ease;
+}
+
+.login:hover {
+  background-color: #ffffff; 
+}
+
+.login:hover a {
+  color: #333333; 
+}
+
+/*footer css*/
+
+.footer {
+  margin-top: 20%;
+}
+
+.footer_3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-family: "NanumSquareLight", sans-serif;
+}
+
+.footer_links{
+  display : flex;
+  padding : 8px 10px;
+  margin-left: auto; 
+  align-items: center;
+  gap : 30px;
+}
+
+.footer_links a {
+  margin: 0px 10px;
+  color: black;
+  text-decoration: none;
+  font-family: "NanumSquareLight", sans-serif;
+}
+
+/*footer css - newsletter*/
+
+.footer_1{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  gap : 30px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.footer_1 h3 {
+  font-family: "NanumSquareExtrabold", sans-serif;
+  font-weight: 800;
+  font-size : 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter_input{
+  border-bottom : 1px solid #333333;
+  padding : 8px 10px;
+  width: 400px;
+  justify-content: center;
+}
+
+.newsletter_icon {
+  padding : 7px;
+  border : 1px solid #333333;
+  color : #333333;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main page.js css */
+.spacebetween{
+  width: 100%;
+  height: 50px;
+}
+.home_intro{
+  display: column;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: "NanumSquareLight", sans-serif;
+  width: 50%;
+  margin: auto;
+}
+
+.home_intro h1 {
+  font-family: "NanumSquareExtrabold", sans-serif;
+  font-size : 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_intro {
+  font-family: "NanumSquareExtrabold", sans-serif;
+  font-size : 14px;
+  color : black;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  border : 1px solid #333333;
+  border-radius: 20px;
+  padding : 5px 1px;
+  width: 100px;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer; 
+}
+
+.btn_intro:hover {
+  background-color: #333333; 
+  color: white; 
+  border-color: #333333; 
+}
+
+.NewsPage {
+  height: 100vh;
+}
+
+.spacebetween2 {
+  height: 130px;
+}
+
+/* Login page css */
+
+.maincontent { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top : 100px;
+  width : 500px;
+  max-height: fit-content;
+  background-color: #f9f9f9; /* Light background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding : 50px 20px 100px;
+  gap : 20px;
+}
+
+.maincontent h1 {
+  font-family: "NanumSquareExtrabold", sans-serif;
+  font-weight: 700;
+  font-size : 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginform, .signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  border-radius: 8px;
+  width: 350px; /* Fixed width for the form */
+}
+
+.inputwrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; /* Space between the input fields */
+}
+
+.logininput, .signupinput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.loginicon, .signupicon {
+  color: #666;
+  margin-right: 10px; /* Add some space between the icon and input */
+  justify-self: center; /* Center the icons horizontally */
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.loginbutton, .signupbutton {
+  width: 100%;
+  padding: 10px;
+  background-color: #333333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.loginlink, .signuplink {
+  margin-top: 10px;
+  color: #666;
+  text-decoration: none;
+  font-family: "NanumSquareLight", sans-serif;
+  font-size: 14px;
+}
+
+/* Contact us page css */
+
+.contactus {
+  margin-top: 20px;
+  width: 70%;
+}
+
+.inputwrapper2 {
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px; /* Space between the input fields */
+  gap : 10px;
+}
+
+.contactinput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.inputwrapper_contact h3 {
+  margin-right: 10px;
+}
+
+.inputwrapper_contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+/* About us page css */
+
+.About {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 70%; /* Adjust the width as necessary */
+  margin: 0 auto; /* Center the grid horizontally */
+  height: 80vh; 
+}
+
+.About2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.About1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.About1 h1 {
+  font-family: "NanumSquareExtrabold", sans-serif;
+  font-weight: 800;
+  font-size: 100px;
+  margin-top: 10vh;
+}
+
+.About1 p {
+  font-family: "NanumSquareLight", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.About2 p {
+  font-family: "NanumSquareLight", sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+/* Signup page css */
+.maincontent.signup {
+  max-height: none;
+  height: auto;
+  padding-bottom: 50px;
+}
