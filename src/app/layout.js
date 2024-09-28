@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <html lang="ko"> 
       <body>
-        <Navbarcopy />
+        <Navbar />
         <main>{children}</main>
         <Footer />
       </body>
