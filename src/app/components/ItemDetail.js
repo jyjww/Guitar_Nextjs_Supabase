@@ -8,11 +8,11 @@ const ItemDetail = ({image, onClose}) => {
     return (
         <div className={styles.itemDetail} onClick={onclose} style={{width:600 , height: 600 }}>
             <div className="ItemHead">
-                <h2>(image.alt || 'Item Name')</h2>
+                <h2>(image.alt || &aposItem Name&apos)</h2>
                 <button onClick={onClose} className={styles.btn_close}><FontAwesomeIcon icon={faXmark} size="lg" /></button>
             </div>
             <img src={image?.image} alt={image?.alt} className={styles.detail_image} />
-            <p>(image.description || 'Item Description')</p>
+            <p>(image.description || &aposItem Description&apos)</p>
         </div>
     )
 }
