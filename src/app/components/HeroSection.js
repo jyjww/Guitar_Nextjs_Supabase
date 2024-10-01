@@ -11,7 +11,7 @@ export default function HeroSection2() {
                     src="/HeroSection3.jpeg" 
                     alt="hero image" 
                     fill
-                    className="w-full h-auto object-cover"
+                    className="w-full h-full object-cover"
                 />
                 {/* 그라디언트 오버레이 */}
                 <div className="absolute inset-0 bg-gradient-to-b from-black to-black/60" />
