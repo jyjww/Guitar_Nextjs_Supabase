@@ -22,7 +22,7 @@ export default async function NewsletterPage() {
   const newsItems = await fetchNewsData(); // 서버에서 데이터 가져오기
 
   return (
-    <div>
+    <div className="overflow-x-hidden w-80% px-4 sm:px-8 lg:px-16">
       <ClientComponent newsItems={newsItems} />
     </div>
   );

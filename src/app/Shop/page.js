@@ -6,10 +6,7 @@ export default function Shop() {
     return (
         <div>
             <HeroSection2/>
-            <div className="spacebetween"/>
-            <h1 style={{textAlign: "center", fontSize:"20px", marginBottom: "40px"}}>All Products</h1>
-            <ShopCategory />
-            <div className="spacebetween"/>
+            <div className="w-full h-[10px] overflow-x-hidden"></div>
             <ShopItems/>
 
         </div>

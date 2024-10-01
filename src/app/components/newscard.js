@@ -3,7 +3,7 @@ import styles from './components.module.css'; // CSS 모듈 가져오기
 
 const NewsCard = ({ title, date, description, imageSrc }) => {
   return (
-    <div className={styles.newsCard}>
+    <div className=" overflow-hidden w-full mx-auto">
       <div className={styles.newsCardHeader}>
         <h3 className={styles.newsCardTitle}>{title}</h3>
       </div>
