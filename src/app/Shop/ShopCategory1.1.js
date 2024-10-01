@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { supabase } from '../supabaseClient';
@@ -24,6 +24,15 @@ const fetchItemsFromSupabase = async () => {
 
 const ShopItems = () => {
     const router = useRouter();
+    
+    return (
+        <Suspense fallback={<div>로딩 중...</div>}>
+            <ShopItemsContent />
+        </Suspense>
+    );
+};
+
+const ShopItemsContent = () => {
     const searchParams = useSearchParams();
     const [items, setItems] = useState([]); // State to hold items from the database
     const [selectedImage, setSelectedImage] = useState(null); // State for the selected image
