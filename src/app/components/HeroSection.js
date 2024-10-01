@@ -17,7 +17,7 @@ export default function HeroSection2() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black to-black/60" />
 
                 {/* 타이틀 */}
-                <h1 className="absolute inset-0 font-custom-font md:flex justify-center items-center text-6xl text-white font-extrabold md:text-left lg:text-left sm:hidden z-10">
+                <h1 className="absolute inset-0 font-custom-font hidden md:flex justify-center items-center text-4xl md:text-6xl text-white font-extrabold md:text-left lg:text-left z-10">
                     Geared up
                     <br className="md:visible"/>
                     <span className="invisible md:visible">&nbsp;for the spotlight</span>
