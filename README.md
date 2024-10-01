@@ -14,7 +14,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://guitar-nu.vercel.app/] with your browser to see the result.
+Or if you are running it on your own computer, open in localhost to see the result. 
 change port with package.json dev, start -p port#
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
